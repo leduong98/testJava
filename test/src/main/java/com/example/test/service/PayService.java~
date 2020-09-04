@@ -61,10 +61,6 @@ public class PayService {
             userLog.setName(info.getName());
             userLog.setUser(user);
             userLogRepository.save(userLog);
-
-            userRepository.save(user);
-            partnerRepository.save(partner);
-
         }
         return new ResponseEntity<>("giao dich thanh cong", HttpStatus.OK);
     }
